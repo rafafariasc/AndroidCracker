@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        String baseText = "ybnmukamysncjwuiisaagjjdnduvyflnjgditbauolyxpatuximwdrnmunwxjmwuomwnmedp" +
+        String cypherText = "ybnmukamysncjwuiisaagjjdnduvyflnjgditbauolyxpatuximwdrnmunwxjmwuomwnmedp" +
                 "lewmujtjintjjjtfrejugmbqbqvestbavowjeopnuieylqbxyxnovywinkvuiicxrktzpijj" +
                 "vykqlauvyhysqhywipatuximwdrattbwotqenpxsljrnhowmtujthbjhnsgiqiadjuysubey" +
                 "qsdaktgubjqarylhnpxonnjfwywtoxwdrattmebyiexpxsfnwqplhtmnduruwawayilehaiw" +
@@ -45,6 +45,8 @@ public class Main {
                 "ijtdcdkufrndwshjirogdigiziocirndubiibwlsanlnjeezepahmbjhkxkqwihcisyimqei" +
                 "xnsolebnmuowiutfuhbhbjujnzxfnxalsldtjjjwtdmwmhbf";
 
-        System.out.println(baseText);
+        int keyLenght = Kasiski.test(cypherText);
+        Brute b = new Brute(keyLenght, cypherText);
+        b.run();
     }
 }
