@@ -45,8 +45,13 @@ public class Main {
                 "ijtdcdkufrndwshjirogdigiziocirndubiibwlsanlnjeezepahmbjhkxkqwihcisyimqei" +
                 "xnsolebnmuowiutfuhbhbjujnzxfnxalsldtjjjwtdmwmhbf";
 
-        int keyLenght = Kasiski.test(cypherText);
-        Brute b = new Brute(keyLenght, cypherText);
+        System.out.println(PermutationGenerator.GenerateAllPermutationsOfLength(1));
+        System.out.println(PermutationGenerator.GenerateAllPermutationsOfLength(2));
+
+        System.out.println(PermutationGenerator.GenerateAllPermutationsOfLength(3));
+
+        int keyLength = Kasiski.test(cypherText);
+        Brute b = new Brute(keyLength, cypherText);
         b.run();
     }
 }
